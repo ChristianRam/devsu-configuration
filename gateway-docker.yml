@@ -11,8 +11,7 @@ server:
 spring:
   cloud:
     gateway:
-      mvc:
-        routes:
+      routes:
           - id: client
             uri: lb://client
             predicates:
