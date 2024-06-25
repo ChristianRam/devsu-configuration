@@ -13,10 +13,10 @@ spring:
     gateway:
       routes:
           - id: client
-            uri: client
+            uri: http://client:8090
             predicates:
               - Path=/api/client/**
           - id: account
-            uri: account
+            uri: http://client:8070
             predicates:
               - Path=/api/**
