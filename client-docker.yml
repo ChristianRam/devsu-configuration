@@ -5,6 +5,9 @@ eureka:
     service-url:
       defaultZone: http://discovery:8761/eureka
 
+server:
+  port: 8090
+
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
@@ -16,6 +19,3 @@ spring:
       ddl-auto: create
     database: postgresql
     database-platform: org.hibernate.dialect.PostgreSQLDialect
-
-server:
-  port: 8090

@@ -17,6 +17,6 @@ spring:
             predicates:
               - Path=/api/client/**
           - id: account
-            uri: http://client:8070
+            uri: http://account:8070
             predicates:
               - Path=/api/**
