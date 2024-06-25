@@ -13,10 +13,10 @@ spring:
     gateway:
       routes:
           - id: client
-            uri: lb://client
+            uri: client
             predicates:
               - Path=/api/client/**
           - id: account
-            uri: lb://account
+            uri: account
             predicates:
               - Path=/api/**
